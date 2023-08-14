@@ -1,10 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+body{
+    font-family: Pretendard;
+}
+nav{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 200px 0px 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: #FFD966;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.noroomi{
+    align-items: center;
+    display: flex;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+#서비스명{
+    margin: 0 0 0 10px;
+}
+#name{
+    color: #FFD966;
+}
+#profile{
+    width: 80px;
+    height: 80px;
+}
 
-</body>
-</html>
+ul li {
+    list-style: none;
+}
+.navUI{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: #737373;
+    align-items: center;
+}
+
+.btn {
+    width: 240px;
+    height: 240px;
+}
+main{
+    text-align: center;
+    background-color: #FCFCFC;
+}
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+p2 {
+    color: #ffd966;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}

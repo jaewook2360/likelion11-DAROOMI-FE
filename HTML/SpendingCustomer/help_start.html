@@ -2,9 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>화면 공유 및 띄워진 프로필 사진</title>
+    <script defer src="../../JS/help_start.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #screenShare {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        #profilePicture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 3;
+        }
+
+        #startButton {
+            position: absolute;
+            bottom: 20px;
+            right: 150px;
+            z-index: 3;
+        }
+    </style>
 </head>
 <body>
+
+<nav>
+    <p><a href="#">누르미</a></p>
+    <ul class="navUl">
+        <li>환영합니다&nbsp;</li>
+        <li>김순자 &nbsp;님</li>
+        <li><a href="../../img/noun-profile-405168.png"><img></a></li>
+    </ul>
+</nav>
+
+<img id="profilePicture" src="your-profile-image.jpg" alt="프로필 사진">
+<button id="startButton">화면 공유 시작</button>
+
+<video width="500" height="300" id="localVideo" autoplay playsinline></video>
+
+
 
 </body>
 </html>
